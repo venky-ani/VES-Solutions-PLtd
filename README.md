@@ -1,1 +1,93 @@
 # VES-Solutions.Pvt.Ltd
+/* style.css */
+
+/* Reset default margins/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #005fa3;
+}
+
+section {
+  padding: 40px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+p, li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #777;
+  margin-top: 40px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  section {
+    padding: 30px 10px;
+  }
+}
